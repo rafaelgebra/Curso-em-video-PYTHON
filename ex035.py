@@ -1,10 +1,11 @@
-print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-print('-=-=-=-=-=-= Analizando triangulos -=-=-=-=-=-=-')
-print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+print('-='*20)
+print('-=-=-=-=-=-= Analizador de triangulos -=-=-=-=-=-=-')
+print('-='*20)
 print()
-l1 = float(input('Digite o primeiro valor: '))
-l2 = float(input('Digite o segundo valor: '))
-l3 = float(input('Digiete o terceiro valor: '))
-if l1  l2 and l2  l3 or l3 > l1
-
-if l2 > l3 and l3 > l1 or
+r1 = float(input('Digite o primeiro segmento: '))
+r2 = float(input('Digite o segundo segmento: '))
+r3 = float(input('Digiete o terceiro segmento: '))
+if (r2 - r3) < r1 < r2 + r3 and (r1 - r3) < r2 < r1 + r3 and (r1 - r2) < r3 < r1 + r2:
+    print('Os seguimento acima \033[;30;41mPODEM FORMAR\033[m um triangulo')
+else:
+    print('Os seguimento acima \033[;30;43mNAO PODEM\033[m um triangulo')

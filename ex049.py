@@ -19,5 +19,5 @@ print('{} x {:2} = {:2}'.format(n1, 10, (n1*10)))
 print('-'* 12) '''
 
 n = int(input('Digite um numero inteiro. '))
-for c in range(1, 10+1):
-    print(n*c)
+for c in range(1, 11):
+    print('{} x {} = {}'.format(n, c, (n*c)))

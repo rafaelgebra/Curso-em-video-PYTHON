@@ -5,7 +5,7 @@ from time import sleep
 # o inicio tem que ser MAIOR que o fim #
 i = int(input('Inicio '))
 f = int(input('Fim '))
-for c in range(i, f+1, -1):
+for c in range(i, f-1, -1):
     print(c)
     sleep(1)
-print()
+print('BUM! BUM!')

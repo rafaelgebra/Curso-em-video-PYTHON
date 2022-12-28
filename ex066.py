@@ -1,4 +1,7 @@
-num = cont = soma = 0
+"""Crie um"""
+
+
+cont = soma = 0
 while True:
     num = int(input('Ditgite um numero (999 para parar): '))
     if num == 999:

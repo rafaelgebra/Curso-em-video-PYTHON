@@ -1,0 +1,21 @@
+continuar = ' '
+homens = 0
+mm20 = 0
+total = 0
+while continuar != 'N':
+    if 0 == 0:
+        idade = int(input('Idade: '))
+        sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
+        continuar = str(input('Quer continuar? [S/N] ')).upper().strip()
+
+        if sexo == 'F' and idade <= 20:
+            mm20 += 1
+        if sexo == 'M':
+            homens += 1
+        if idade >= 18:
+            total += 1
+    else:
+        break
+print(f'Total de pessoas com mais de 18 anos sao {total}')
+print(f'Ao total temos homem {homens} cadastrados' )
+print(f'Temos {mm20} mulheres com menos de 20 anos')

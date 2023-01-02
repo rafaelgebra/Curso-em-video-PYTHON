@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 v1 = int(input('Primeiro '))
 v2 = int(input('Segundo '))
@@ -24,3 +25,8 @@ while True:
         if total == 0:
             break
 
+=======
+v1 = int(input('Primeiro '))
+v2 = int(input('Segundo '))
+print(v1 + v2 )
+>>>>>>> f9169c674ae7976ea77affd838a9f1c29368bbc6

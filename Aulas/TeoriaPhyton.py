@@ -15,6 +15,19 @@ str -> 'caracter, string =' 'Olá', '7,5', ''
 PARA VER O TIPO é só usar:
 print(type())
 
+Dica -> No caso abaixo, a Variável "num" é um OBJETO e todo objeto tem caracteristicas e realiza funcionalidades, com isso tem ATRIBUTOS e METODOS.
+
+
+num = input('Digite algo ')
+print('Foi digitado o seguinte {}, qual o tipo {} '.format(num, type(a)))
+print('so tem espaco {} '.format(num.isspace()))
+print('E um numero? {}'.format(num.isnumeric()))
+print(f'É alfanumerico? {num.isalnum()}')
+print('É alfabetico? {}'.format(num.isalpha()))
+print('Esta em maiusculas? {}'.format(num.isupper()))
+print('Esta em minusculas? {}'.format(num.islower()))
+print(f'Esta capitalozada? {num.istitle()}')
+
 
 
 'Aula 9'

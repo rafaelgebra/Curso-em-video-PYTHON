@@ -65,6 +65,45 @@ print(f'Esta capitalozada? {num.istitle()}')
 
                 'Aula 8 - Utilizando Módulos'
 
+Importar dados/modulos.
+tem duas maneiras basicas de importar modulos no Python
+
+1- comando import (importa dodas as funcionalidades do módulo)
+
+2- from......import.... (importar somente um contéudo da bíblioteca )
+
+Ex: usando o modulo completo 
+
+import math
+num = int(input('Digite um numero:'))
+raiz = math.sqrt(num)
+arr = math.ceil(raiz)
+bai = math.floor(raiz)
+print('A raiz de {} é {:.2f} e arredondada para cima é {} e arredondado para baixo é {}'.format(num, raiz, arr, bai))
+
+
+#Para arredondar para cima usar assim. porém o valor é inteiro
+print('A raiz de {} é {}' .format(num, math.ceil(raiz)))
+
+#Para arredondar para baixo. poŕem o valor é inteiro
+print('A raiz de {} é {} arredondando para baixo é' .format(num, math.floor(raiz)))
+
+Ex:
+Usando só algumas funcionalidades do módulo
+
+from math import sqrt, ceil, floor
+num = int(input('Digite um numero:'))
+raiz = sqrt(num)
+arr = ceil(raiz)
+bai = floor(raiz)
+print('A raiz de {} é {:.2f} e arredondada para cima é {} e arredondado para baixo é {}'.format(num, raiz, arr, bai))
+
+#Para arredondar para cima usar assim. porém o valor é inteiro
+print('A raiz de {} é {}' .format(num, ceil(raiz)))
+
+#Para arredondar para baixo. poŕem o valor é inteiro
+print('A raiz de {} é {} arredondando para baixo é' .format(num, floor(raiz)))
+
 
 
 

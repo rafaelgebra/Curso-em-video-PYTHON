@@ -1,75 +1,6 @@
-Dica -> Para não pular linha usar (end=' ') depois de:
-print('A soma e {}  e a divisao e {:.3f} '.format(s, d), end=' ') no final da linha.
+                'Aula 9'
 
-
-
-
-'Aula 6 - tipos primitivos e saída de dados'  
-
-
-Para escrever uma string dentro de um print serve tanto aspas simples como duplas, porém a comunidade recomenda por aspas simples -  então siga a recomendação.
-
-Os quatro tipos primitivos mais basicos que existem são:
-
-int -> 'número inteiro = 7, -4, 0, 9875 '
-
-float   -> 'números reais, flotuantes = 4.5, 0.0076, -15.223'
-
-bool -> 'Booleanos, valor lógico = True ou False (Sempre coma primeira letra MAIÚSCULA)'
-
-str -> 'caracter, string =' 'Olá', '7,5', ''
-
-
-PARA VER O TIPO é só usar:
-print(type())
-
-Dica -> No caso abaixo, a Variável "num" é um OBJETO e todo objeto tem caracteristicas e realiza funcionalidades, com isso tem ATRIBUTOS e METODOS.
-
-#Tudo que vem depois do (num.is...)é um metodo
-
-
-num = input('Digite algo ')
-print('Foi digitado o seguinte {}, qual o tipo {} '.format(num, type(a)))
-print('so tem espaco {} '.format(num.isspace()))
-print('E um numero? {}'.format(num.isnumeric()))
-print(f'É alfanumerico? {num.isalnum()}')
-print('É alfabetico? {}'.format(num.isalpha()))
-print('Esta em maiusculas? {}'.format(num.isupper()))
-print('Esta em minusculas? {}'.format(num.islower()))
-print(f'Esta capitalozada? {num.istitle()}')
-
-
-'Aula 7 - operadores Aritméticos'
-
-+   -> adição
--   -> subtração
-*   -> Multiplicação
-/   -> Divisão
-**  -> Potência
-//  -> Divisão inteira
-%   -> Resto da divisão (modulo)
-
-
-#ORDEM de PRECEDÊNCIA dentro de Operadores Aritméticos
-
-1   ()              -> Parenteses
-2   **              -> Potência   
-3   *, /, //, %     -> Multiplicação, Divisão, Divisão Inteira, Resto da Divisão 
-4   +, -            -> Soma, Subtração
-
-{'='*20} Vai aparecer = 20 vezes
-{:>20}  Vai aparecer o conteudo alinhado a DIREITA com 20 espaços 
-{:<20}  Vai aparecer o conteudo alinhado a ESQUERDA com 20 espaços 
-{:^20}  Vai aparecer o conteudo CENTRALIZADO com 20 espaços 
-{:=^20} Vai aparecer o conteudo alinhado com = em volta do conteúdo com 20 espaços 
-
-                'Aula 8 - Utilizando Módulos'
-
-
-
-
-
-                'Aula 9 - Fratiamento de string'
+'''Fratiamento de string'''
 
 frase = 'Curso em Video Python'
 print(frase[9]) -> 'Significa que o python vai pegar o caracter 9'
@@ -340,8 +271,8 @@ acessíveis por chaves individuais."""
 
 # As tuplas SÃO IMUTÁVEIS
 
-                () TUPLA
-                [] LISTA
+                () TUPLA - CHAVES
+                [] LISTA - COLCHETES
                 {} dicionario
 
 
@@ -382,3 +313,83 @@ print(pessoa)
 del(pessoa)
 pessoa = (1,2,3,4,5)
 print(pessoa)
+
+# aula 17 LISTAS
+'''Diferente das tuplas as listas podem sem manipuladas(multaveis)'''
+
+                () TUPLA - CHAVES
+                [] LISTA - COLCHETES
+                {} dicionario
+
+'''para adicionar "itens" no FINAL uma lista tem que usar o comando .append()'''
+.append(item)
+'''Tambem pode adicionar item no meio ou qualquer lugar da lista usando o comando .insert(0, 'iten')'''
+.insert(0, 'item') # neste caso mostra que esta acidionando o item na posição 0 da lista
+
+'''Eliminar item da lista pode ser feita polos comandos'''
+del item [3] #comando basico # usando essa formula se deleta pelo indice.
+item.pop(3) #normalmente é usando esse comando para eliminar o ultimo elemento da lista, mas se passar os paremetros desejamos ele apaga o item # usando essa formula se deleta pelo indice.
+item.pop() #dessa forma só elimina o ultimo elento.
+item.remove('item') # usando essa formula se deleta conteudo/item
+
+'''para remover algum item da lista mas não sabe se esse item tem na lista
+só usar a formula '''
+if item in lista:
+    lista.remove('item')
+
+#criar lista atravez de range
+valores = list(range(4,11)) # sera comocado tudo isso dentro de uma lista chamado valores que é o nome da vareavel e será identificado como uma lista normal
+'''range cria uma lista organizada mas se quiser fazer uma lista fora de ontem tem que fazer manual.'''
+'''Mas se a lista estiver fora de ondem e quiser deixar em ondem usar o metodo. lista. sort() '''
+lista.sort() #ordena todos os valores deixanso em ondem
+'''se quiser deixar ondem inverza. '''
+lista.sort(reverse=True)
+'''tamanho da lista, só usar a função len função interna'''
+len(lista)
+
+"""from random import randint # Fim com que os numeros fozem escolidos aleatoriamente pela funcao randint
+valores = list()
+print(randint)
+cont = randint(0, 10)
+for l in range(0, 5):
+    cont += randint(0, 100000)
+    valores.append(cont)
+for c, v in enumerate(valores):
+    print(f'Na posicao {c} encontrei a valore {v}! ')
+print('Cheguei ao final da lista')"""
+valores = list()
+for cont in range(0, 5):
+    valores.append(int(input('Digite um numero ')))
+for c, v in enumerate(valores):
+    print(f'Na posicao {c} encontrei o valor {v}!')
+print('Cheguei ao final da lista ')
+
+
+
+a = [2, 3, 4, 7]
+b = a # isso nao é uma copia é uma ligação entre elas
+b = a[:] # para fazer uma copia da LISTA tem que usar o fatiameno senao o que mudar em uma muda na outra
+print(f'Lista {a}')
+print(f'Lista {b}')
+b [2] = 8
+print(f'Lista {a}')
+print(f'Lista {b}')
+
+
+lista = []
+menor = maior = 0
+for c in range(0, 5):
+    lista.append(int(input(f'Digite um valor para a posicao {c}: ')))
+    maior = max(lista)
+    menor = min(lista)
+print(f'Voce digitou os numeros {lista}')
+print(f'O maior valor digitado foi {maior} nas posicoes ', end='')
+for i, v in enumerate(lista):
+    if v == maior:
+        print(f'{i}... ', end='')
+print()
+print(f'O menor valor digitado foi {menor} nas posicoes ', end='')
+for i, v in enumerate(lista):
+    if v == menor:
+        print(f'{i}... ', end='')
+print()

@@ -1,4 +1,12 @@
-                    'Aula 6 - tipos primitivos e saída de dados'        
+Dica -> Para não pular linha usar (end=' ') depois de:
+print('A soma e {}  e a divisao e {:.3f} '.format(s, d), end=' ') no final da linha.
+
+
+
+
+'Aula 6 - tipos primitivos e saída de dados'  
+
+
 Para escrever uma string dentro de um print serve tanto aspas simples como duplas, porém a comunidade recomenda por aspas simples -  então siga a recomendação.
 
 Os quatro tipos primitivos mais basicos que existem são:
@@ -17,6 +25,8 @@ print(type())
 
 Dica -> No caso abaixo, a Variável "num" é um OBJETO e todo objeto tem caracteristicas e realiza funcionalidades, com isso tem ATRIBUTOS e METODOS.
 
+#Tudo que vem depois do (num.is...)é um metodo
+
 
 num = input('Digite algo ')
 print('Foi digitado o seguinte {}, qual o tipo {} '.format(num, type(a)))
@@ -29,10 +39,32 @@ print('Esta em minusculas? {}'.format(num.islower()))
 print(f'Esta capitalozada? {num.istitle()}')
 
 
+'Aula 7 - operadores Aritméticos'
 
-'Aula 9'
++   -> adição
+-   -> subtração
+*   -> Multiplicação
+/   -> Divisão
+**  -> Potência
+//  -> Divisão inteira
+%   -> Resto da divisão (modulo)
 
-'''Fratiamento de string'''
+
+#ORDEM de PRECEDÊNCIA dentro de Operadores Aritméticos
+
+1   ()              -> Parenteses
+2   **              -> Potência   
+3   *, /, //, %     -> Multiplicação, Divisão, Divisão Inteira, Resto da Divisão 
+4   +, -            -> Soma, Subtração
+
+{'='*20} Vai aparecer = 20 vezes
+{:>20}  Vai aparecer o conteudo alinhado a DIREITA com 20 espaços 
+{:<20}  Vai aparecer o conteudo alinhado a ESQUERDA com 20 espaços 
+{:^20}  Vai aparecer o conteudo CENTRALIZADO com 20 espaços 
+{:=^20} Vai aparecer o conteudo alinhado com = em volta do conteúdo com 20 espaços 
+
+
+                'Aula 9 - Fratiamento de string'
 
 frase = 'Curso em Video Python'
 print(frase[9]) -> 'Significa que o python vai pegar o caracter 9'

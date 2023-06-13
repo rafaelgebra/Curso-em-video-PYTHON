@@ -7,4 +7,6 @@ dm = n1 * 10
 cm = n1 * 100
 mm = n1 * 1000
 
-print('A conversao de {}M em \n km = {} \n hm = {} \n dam = {} \n m = {} \n dm = {} \n cm = {} \n mm = {} '. format(n1,km,hm,dam,m,dm,cm,mm))
+print('-'*30)
+print('A conversao de {}M em \nkm  = {} \nhm  = {} \ndam = {} \nm   = {} \ndm  = {} \ncm  = {} \nmm  = {} '. format(n1,km,hm,dam,m,dm,cm,mm))
+print('-'*30)

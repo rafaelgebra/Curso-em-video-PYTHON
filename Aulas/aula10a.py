@@ -16,7 +16,8 @@ if tempo <=3:
     print('carro novo')
 else:
     print('carro velho')
-# simplificado
+    
+                # simplificado
 #print('carro novo'if tempo <= 3 else 'carro velho')
 print('--FIN--')"""
 

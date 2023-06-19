@@ -1,14 +1,13 @@
-from math import sqrt, ceil, floor
-num = int(input('Digite um numero:'))
-raiz = sqrt(num)
-arr = ceil(raiz)
-bai = floor(raiz)
-print('A raiz de {} é {:.2f} e arredondada para cima é {} e arredondado para baixo é {}'.format(num, raiz, arr, bai))
+frase = 'Curso em Vídeo Python'
+print(frase.upper().count('O'))
+print(len(frase.strip()))
+print(frase.replace('Python', 'Android'))
+print(frase)
+print('Curso' in frase)
+print(frase.find('Curso'))
+print(frase.lower().find('vídeo'))
 
-
-
-#Para arredondar para cima usar assim. porém o valor é inteiro
-print('A raiz de {} é {}' .format(num, ceil(raiz)))
-
-#Para arredondar para baixo. poŕem o valor é inteiro
-print('A raiz de {} é {} arredondando para baixo é' .format(num, floor(raiz)))
+dividido = frase.split() # transforma em uma lista
+print(dividido) #['Curso', 'em', 'Vídeo', 'Python' / transforma cada palavra em um índice separado
+print(dividido[0]) # Curso / foi celecionado o itém 0 da lista
+print(dividido[2][3]) # e / foi celecionado o a letra referente ao índece 3 do itém 2 da lista

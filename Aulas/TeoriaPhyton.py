@@ -104,10 +104,6 @@ print('A raiz de {} é {}' .format(num, ceil(raiz)))
 #Para arredondar para baixo. poŕem o valor é inteiro
 print('A raiz de {} é {} arredondando para baixo é' .format(num, floor(raiz)))
 
-
-
-
-
                 'Aula 9 - Fratiamento de string'
 
 frase = 'Curso em Video Python'
@@ -157,6 +153,24 @@ print(frase2)
 print(frase2.strip()) # remove os espacos da direota e esquerda
 print(frase2.rstrip()) # remove os espacos da direita
 print(frase2.lstrip()) # remoce os espacos da esquerda
+
+
+
+frase = 'Curso em Vídeo Python'
+print(frase.upper().count('O'))
+print(len(frase.strip()))
+print(frase.replace('Python', 'Android'))
+print(frase)
+print('Curso' in frase)
+print(frase.find('Curso'))
+print(frase.lower().find('vídeo'))
+
+dividido = frase.split() # transforma em uma lista
+print(dividido) #['Curso', 'em', 'Vídeo', 'Python' / transforma cada palavra em um índice separado
+print(dividido[0]) # Curso / foi celecionado o itém 0 da lista
+print(dividido[2][3]) # e / foi celecionado o a letra referente ao índece 3 do itém 2 da lista
+
+
 
 # importar data #
 from datetime import date
@@ -221,6 +235,7 @@ print('KEN')
 sleep(1)
 print('PO!!!')
 sleep(1)'''
+
 
 
         '''Aula 13'''

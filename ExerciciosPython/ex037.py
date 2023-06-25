@@ -11,4 +11,4 @@ elif opcao == 2:
 elif opcao == 3:
     print('{} convertido para HEXADECIMAL e igaul a {}'.format(num, hex(num)[2:]))
 else:
-    print('Opcao invalida. Tente novamente!')
+    print('Opção inválida. Tente novamente!')

@@ -150,7 +150,7 @@ print('-'.join(frase))
 
 frase2 = '   Aprenda Python  '
 print(frase2)
-print(frase2.strip()) # remove os espacos da direota e esquerda
+print(frase2.strip()) # remove os espacos da direita e esquerda
 print(frase2.rstrip()) # remove os espacos da direita
 print(frase2.lstrip()) # remoce os espacos da esquerda
 

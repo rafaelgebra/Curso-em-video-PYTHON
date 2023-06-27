@@ -11,3 +11,17 @@ elif (6.9 <= media) and (10 >= media):
 else:
     print('Erro digite as notas novamente')
 print(media)
+
+
+"""
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+media = (nota1 + nota2) / 2
+print('Quem tirou {} e {}, a média do aluno é {:.1}' .format(nota1, nota2, media))
+if media >= 7:
+    print('O aluno está APROVADO')
+elif 7 < media >= 5 :
+    print('Aluno em RECUPERAÇÃO.')
+elif media < 5:
+    print('Aluno REPROVADO.')
+"""

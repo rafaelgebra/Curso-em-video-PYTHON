@@ -13,3 +13,28 @@ elif sex == 'f':
     print('Voce nao precisa de alistar!')
 else:
     print('opcao invalida. Entente novamente.')
+
+
+
+"""
+from datetime import date
+ano = int(input('Que ano você nasceu: '))
+sexo = str(input('Qual o seu Sexo? ')).strip().upper()
+ano_atual = date.today().year
+idade = ano_atual - ano
+
+print('Quem nasceu em {} tem {} anos em {}.' .format(ano, idade, ano_atual))
+if sexo == 'M':
+    if idade < 18: 
+        saldo = 18 -idade
+        print('Falta {} anos para se alistar.' .format(saldo))
+        print('Seu alistamento será {} '.format(ano + 18)) 
+    elif idade == 18:
+        print('Deve se alistar  imediatamete!!')
+    else:
+        saldo = idade - 18
+        print('Já passou do tempo faz {}' .format(saldo))
+        print('Seu alistamento foi em {}' .format(ano +  18))
+else:
+    print('Para o sexo Feminino não é obrigatorio')
+"""

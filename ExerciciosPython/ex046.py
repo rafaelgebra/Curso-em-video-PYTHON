@@ -8,4 +8,4 @@ f = int(input('Fim '))
 for c in range(i, f-1, -1):
     print(c)
     sleep(1)
-print('BUM! BUM!')
+print('BUM! BUM!' + '\U0001F386')

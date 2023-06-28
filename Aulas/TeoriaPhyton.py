@@ -1,7 +1,8 @@
 Dica -> Para não pular linha usar (end=' ') depois de:
 print('A soma e {}  e a divisao e {:.3f} '.format(s, d), end=' ') no final da linha.
 
-
+# , (end='') nao quebra a linha
+# (\n) quebra linha
 
 
 'Aula 6 - tipos primitivos e saída de dados'  
@@ -260,6 +261,12 @@ cumputador = randint(0, 5).
 print(cumputador)
 
 # Emojis #
+Para usar o emoji fazer a seguinte seguência
+
+U+1F386 # ESSE é o codigo so emoji
+
+print('U0001F386') # no codigo alterar o sinal de + e 3 zeros. pronto
+
 
 'Teste logico par com' if# if numero % 2 == 0:#
 

@@ -21,3 +21,10 @@ print('-'* 12) '''
 n = int(input('Digite um numero inteiro. '))
 for c in range(1, 11):
     print('{} x {} = {}'.format(n, c, (n*c)))
+
+"""
+num = int(input('Digite um número para ver a tabuada '))
+for n in range(0, 11):
+    tab = num * n
+    print('{} x {:>2} = {:>2}' .format(num, n, tab))
+"""

@@ -1,14 +1,16 @@
-
-s = 0
-c = 0
-total = 0
-for n in range(1, 7):
-    num = int(input('Digite o {}º número inteiro: '. format(n)))
-    total += num
-    c += 1
-    if num % 2 == 0:
-        s +=  num
-
-print('A soma de todos os {} números digitados é {} sendo que a soma dos pares é {}'.format(c, total, s))
-if s == 0:
-    print('Não tem números pares para serem somados.')
+print('='*30)
+print('{:^30}'.format(' SERÁ QUE É NÚMERO PRIMO? '))
+print('='*30)
+num = int(input('Digite um número: '))
+primos = 0
+for c in range(1, num +1):
+    if num % c == 0:
+        print('\033[33m', end=' ')
+        primos += 1
+    else:
+        print('\033[31m', end=' ')
+    print('{}'.format(c), end=' ')
+if primos == 2:
+    print('\n\033[mO número {} é primo porque foi dividido {} vezes.' .format(num, primos))
+else:
+    print('\n\033[mO número {} não é primo porque foi dividido {} vezes.' .format(num, primos))

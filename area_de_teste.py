@@ -1,16 +1,13 @@
-print('='*30)
-print('{:^30}'.format(' SERÁ QUE É NÚMERO PRIMO? '))
-print('='*30)
-num = int(input('Digite um número: '))
-primos = 0
-for c in range(1, num +1):
-    if num % c == 0:
-        print('\033[33m', end=' ')
-        primos += 1
-    else:
-        print('\033[31m', end=' ')
-    print('{}'.format(c), end=' ')
-if primos == 2:
-    print('\n\033[mO número {} é primo porque foi dividido {} vezes.' .format(num, primos))
-else:
-    print('\n\033[mO número {} não é primo porque foi dividido {} vezes.' .format(num, primos))
+maior = 0
+menor = 0   
+for c in range(1,6):
+    peso = int(input('Peso da {}º pessoa: ' .format(c)))
+    if peso > maior:
+        maior = peso
+    if peso < menor:
+        menor = peso
+print('O maior peso lido foi de {:.2f}' .format(maior))
+print('o menor peso lido foi de {:.2f}' .format(menor))
+
+
+

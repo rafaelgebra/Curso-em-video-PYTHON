@@ -1,4 +1,4 @@
-# ESTRUTURA DE REPETICAO CONTESTE LOGICO (WHILE) #
+# ESTRUTURA DE REPETICAO COM TESTE LOGICO (WHILE) #
 ''' while not "apple":
     "passo"
 "pega"

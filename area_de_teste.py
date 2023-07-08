@@ -1,15 +1,23 @@
-n = 1
-totpar = 0
-totinpar = 0
-cont = 1
-while n != 0:
-    n = int(input('Digite um {}º valor: ' .format(cont)))
-    cont += 1
-    if n != 0:
-        if n % 2 == 0:
-            totpar += 1
-        if n % 2 == 1:
-            totinpar += 1
+from random import randint
+from time import sleep
+computador = randint(0,10)
+print(computador)
+print('Sou o seu computador...')
+sleep(0.1)
+print('Acabei de pensar em um número entre 0 e 10.')
+sleep(0.2)
+print('Será que você consegue adivinhar qual é?')
+sleep(0.2)
+pessoa = int(input('Qual o seu palpite? '))
+c = 0
 
-print('O total de números pares é {}' .format(totpar))
-print('O total de números impares é {}' .format(totinpar))
+while computador != pessoa :
+
+    for c in range(1, 11):
+        if c < 10:
+            c += 1     
+            pessoa = int(input('ERRO! Essa foi a tentativa de número {} ' .format(c)))
+        else:
+            pessoa = computador
+    print('Acabou as suas chances. Tente mais tarde!!')
+print('Parabéns você acertou!!')

@@ -1,21 +1,22 @@
-from random import randint
-from time import sleep
-computador = randint(0,10)
-print('Sou o seu computador...')
-sleep(1)
-print('Acabei de pensar em um número entre 0 e 10.')
-sleep(1)
-print('Será que você consegue adivinhar qual é?')
-sleep(1)
-pessoa = int(input('Qual o seu palpite?. '))
-tentativas = 0
-while computador != pessoa :
-    tentativas += 1
-    if pessoa > computador:
-        print('Menos ... Tente outra vez.')
-        sleep(1)
-    if pessoa < computador:
-        print('Mais... Tente mais uma vez ')
-        sleep(1)     
-    pessoa = int(input('Qual o seu palpite?. '))
-print('Acertou com {} tentativas. Parabéns!! ' .format(tentativas))
+
+num = int(input('Digite um número: '))
+c = num
+f = 1
+while c > 0:
+    print('{} '.format(c), end='')
+    print(' x ' if c > 1 else '= ', end='')
+    f *= c
+    c -= 1
+print('{}' .format(f))
+    
+    
+
+
+
+"""from math import factorial
+num = int(input('Digite um número para calcular seu Fatorial: '))
+f = factorial(num)
+print('O fatorial de {} é {}' .format(num, f))"""
+
+
+

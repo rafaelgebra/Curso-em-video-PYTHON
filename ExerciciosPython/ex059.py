@@ -38,3 +38,46 @@ while opcao != 5:
         sleep(1)
 print('Finalizando... Obrigado por participar')
 sleep(2)
+
+"""
+from time import sleep
+opcao = 0
+num1 = float(input('Digite o primeiro valor: '))
+num2 = float(input('Digite o segundo valor: '))
+while opcao != 5:
+    print('=-'*30)
+    print('''    [ 1 ] somar
+    [ 2 ] multiplicar
+    [ 3 ] maior
+    [ 4 ] novos números
+    [ 5 ] sair do programa''')
+    
+    opcao = int(input('>>>> Qual é a sua opção? '))
+    if opcao == 1:
+        resultado = num1 + num2
+        print('A soma entre {} e {} é {}' .format(num1, num2, resultado))
+
+    elif opcao == 2:
+        resultado = num1 * num2
+        print('A multiplicação entre {} e {} é {}' .format(num1, num2, resultado))
+
+    elif opcao == 3:
+        if num1 > num2:
+            print('O primeiro valor {} é maior que o segundo valor {}.' .format(num1, num2))
+        elif num2 > num1:
+            print('O segundo valor {} é maior que o primeiro valor {}.' .format(num2, num1))
+        else:
+            print('Não tem valor maior.')
+
+    elif opcao == 4:
+        num1 = float(input('Digite o primeiro valor: '))
+        num2 = float(input('Digite o segundo valor: '))
+
+    elif opcao == 5:
+        continua = 1
+
+    else:
+        print('Opção inválida')
+    sleep(2)
+print('FIM DO PROGRAMA')
+"""

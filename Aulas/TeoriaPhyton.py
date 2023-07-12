@@ -1,6 +1,8 @@
 Dica -> Para não pular linha usar (end=' ') depois de:
 print('A soma e {}  e a divisao e {:.3f} '.format(s, d), end=' ') no final da linha.
 
+DICA -> print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
+
 # , (end='') nao quebra a linha
 # (\n) quebra linha
 
@@ -394,7 +396,23 @@ print()
 while sexo not in 'MF':
     sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
 
-# Aulas 15 - Tuplas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Aulas 17 - Tuplas
 """Nessa aula, vamos aprender o que são TUPLAS e como utilizar tuplas em Python. 
 As tuplas são variáveis compostas e imutáveis que permitem armazenar vários valores em uma mesma estrutura, 
 acessíveis por chaves individuais."""

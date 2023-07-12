@@ -1,16 +1,8 @@
-resposta = 'S'
-maior = menor = cont = soma = 0
-while resposta != 'N': # também da para fazer assim = while resposta in 'Nn':
-    num = int(input('Digite um número: '))
-    resposta = str(input('Quer continuar? [S/N]: ')).strip().upper()
-    cont += 1
+cont = soma = 0
+while True:
+    num = int(input('Digiete um valor [999 pra parar]: '))
+    if num == 999:
+        break
     soma += num
-    if cont == 1 :
-        maior = num
-        menor = num 
-    else:    
-        if maior < num:
-            maior = num
-        if menor > num:
-            menor = num
-print('você digitou {} e a média foi de {:.2f} \n O maior valor foi {} e o menor foi {}' .format(cont, (soma/cont), maior, menor))
+    cont += 1
+print(f'A soma dos {cont} valores foi de {soma:.2f}')

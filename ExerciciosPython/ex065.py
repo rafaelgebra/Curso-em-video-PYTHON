@@ -24,3 +24,25 @@ print('Foram digitados {} o total e {} a media e {}'.format(cont, total, media))
 print('O maior valor digitado foi {} e o menor foi {}'.format(maior, menor))
 
 
+
+"""
+resposta = 'S'
+maior = menor = cont = soma = 0
+while resposta != 'N': # também da para fazer assim = while resposta in 'Nn':
+    num = int(input('Digite um número: '))
+    resposta = str(input('Quer continuar? [S/N]: ')).strip()
+    cont += 1
+    soma += num
+    if cont == 1 :
+        maior = num
+        menor = num 
+    else:    
+        if maior < num:
+            maior = num
+        if menor > num:
+            menor = num
+print('você digitou {} e a média foi de {:.2f} \n O maior valor foi {} e o menor foi {}' .format(cont, (soma/cont), maior, menor))
+
+
+"""
+

@@ -1,8 +1,10 @@
-cont = soma = 0
+
 while True:
-    num = int(input('Digiete um valor [999 pra parar]: '))
-    if num == 999:
+    num = int(input('Quer ver a tabuada de qual valor? '))
+    print('='*40)
+    if num <= -1:
         break
-    soma += num
-    cont += 1
-print(f'A soma dos {cont} valores foi de {soma:.2f}')
+    for c in range(0, 11):
+        print(f'{num} X {c:>2} = {num*c}')
+    print('='*40)
+print('PROGRAMA DE TABUADA ENCERRADA. Volte sempre!!')

@@ -11,7 +11,7 @@ while True:
 print('Programa de tabuada finalizada. Volte sempre! ')
 
 
-
+"""
 
 while True:
     num = int(input('Quer ver a tabuada de qual valor? '))

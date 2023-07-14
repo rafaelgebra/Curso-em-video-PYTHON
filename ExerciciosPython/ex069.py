@@ -23,3 +23,33 @@ while continuar != 'N':
 print(f'Total de pessoas com mais de 18 anos sao {total}')
 print(f'Ao total temos homem {homens} cadastrados' )
 print(f'Temos {mm20} mulheres com menos de 20 anos')
+
+
+"""
+
+total18 = homens = mulheres = 0
+while True:
+    print('='*30)
+    print(f'{"CADASTRE UMA PESSOA":^30}')
+    print('='*30)
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('[M/F]: ')).strip().upper()[0]
+    continuar = ' '
+    if idade >= 18:
+        total18 += 1
+    if sexo == 'M':
+        homens += 1
+    if sexo == 'F' and idade <= 20:
+        mulheres += 1
+    while continuar not in 'SN':    
+        continuar = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    if continuar == 'N':
+        break
+print(f'Total de pessoas com mais de 18 anos: {total18}.')
+print(f'Ao todo temos {homens} homens cadastrados.')
+print(f'Ao todo temos {mulheres} mulheres cadastradas com menos de 20 anos')
+
+
+"""

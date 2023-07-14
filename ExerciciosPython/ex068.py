@@ -43,7 +43,7 @@ while True:
     while opcao not in 'PI':
         opcao = str(input('Par ou Impar [P/I]: ')).strip().upper()[0]
     print('-'*40)    
-    print(f'Você jogou {jogador} e o computador {computador}. Total de {total} deu {"DEU PAR" if total % 2 == 0 else "DEU IMPAR"}')
+    print(f'Você jogou {jogador} e o computador {computador}. Total de {total} {"DEU PAR" if total % 2 == 0 else "DEU IMPAR"}')
     print('-'*40)
     if opcao == 'P':
         if total % 2 == 0:

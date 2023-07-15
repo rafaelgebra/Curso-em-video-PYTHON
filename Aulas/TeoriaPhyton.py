@@ -3,6 +3,11 @@ print('A soma e {}  e a divisao e {:.3f} '.format(s, d), end=' ') no final da li
 
 DICA -> print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
 
+
+                () TUPLA
+                [] LISTA
+                {} dicionario
+
 # , (end='') nao quebra a linha
 # (\n) quebra linha
 
@@ -397,22 +402,7 @@ while sexo not in 'MF':
     sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Aulas 17 - Tuplas
+# Aulas 16 - Tuplas
 """Nessa aula, vamos aprender o que são TUPLAS e como utilizar tuplas em Python. 
 As tuplas são variáveis compostas e imutáveis que permitem armazenar vários valores em uma mesma estrutura, 
 acessíveis por chaves individuais."""

@@ -40,7 +40,7 @@ print(f'{"FIM":=^50}')
 
 """ Com a função print(sorted(lanche)) ORGANIZADO/ORDEM"""
 print(sorted(lanche[:3]))
-print(sorted(lanche))
+print(sorted(lanche)) #Não altera a ordem da tupla
 print(lanche)
 
 print(f'{"Fim do exemplo LANCHE":=^100}')
@@ -53,4 +53,4 @@ print(a+b)
 print(c)
 print(len(c))
 print(c.count(5))
-print(c.index(5, 2)) # para seber a posição de um número usar a função interna .index, caso tenha o mesmo número em mais de uma posição, informar mais uma vez dentro da função .index """ EX print(c.index(5, 2) o "cinco" indica qual o número a ser procurado no index, o "2 " indica qual a posição do index que é para começar o outro número. """
+print(c.index(5, 2)) # para saber a posição do conteudo usar a função interna .index, caso tenha o mesmo número em mais de uma posição, informar mais uma vez dentro da função .index """ EX print(c.index(5, 2) o "cinco" indica qual o número a ser procurado no index, o "2 " indica qual a posição do index que é para começar o outro número. """

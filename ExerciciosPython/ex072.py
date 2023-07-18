@@ -13,3 +13,31 @@ while continuar != 'N':
     else:
         numeros = int(input('Tente novamente. Digete um numero entre 0 e 20: '))
 print('Obrido por participar!!')
+
+
+"""
+tupla = ('zero','um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez','onze','dose','treze','quatorze','quize','dezeseis','dezesete','dezoito','dezenove','vinte')
+
+continuar = 'S'
+while continuar != 'N':
+    if continuar == 'N':
+        break
+    num = int(input('Digite um número entre 0 e 20: '))
+    if num >= 0 and num <= 20:
+        print(f'Você digitou o numero {(tupla[num])}')
+        continuar = str(input('Quer continuar? ')).strip().upper()
+    else:
+        num = int(input('Tente vamente. Digite um número entre 0 e 20: '))"""
+
+
+"""num = int(input('Digite um número entre 0 e 20: '))
+continuar = 'S'
+while True:
+    if continuar in 'Nn':
+            break
+    if 0 <= num <= 20:
+        print(f'Você digitou o número {tupla[num]}')
+        continuar = str(input('Quer continuar? [S/N] ')).strip()
+    else:
+        num = int(input('Tente novamente. Digite um número entre 0 e 20: '))
+"""

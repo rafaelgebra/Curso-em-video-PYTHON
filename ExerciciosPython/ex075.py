@@ -19,3 +19,30 @@ print(f'Os numeros pares são', end=' ')
 for n in tabela:
     if n % 2 == 0:
         print(n, end=', ')
+
+
+"""
+'''
+    pode ser feito assim também
+
+num1 = int(input('Digite um número: '))
+num2 = int(input('Digite outro número: '))
+num3 = int(input('Digite mais um número: '))
+num4 =  int(input(('Digite o último número: ')))
+tupla = (num1, num2, num3, num4)
+'''
+tupla = ((int(input('Digite um número: '))), (int(input('Digite outro número: '))),
+         (int(input('Digite mais um número: '))), (int(input(('Digite o último número: ')))))
+
+print(f'Você digitou os valores {tupla}')
+print(f'O valor 9 apareceu {(tupla.count(9))} vezes')
+if 3 in tupla:
+    print(f'O valor 3 apareceu na {tupla.index(3)+1} posição')
+else:
+    print('Não tem o número 3 digitado na atual tupla ')
+print('O valores pares digitados foram ', end=' ')
+for elemento in tupla:
+    if elemento % 2 == 0:
+        print((elemento),end=', ')
+
+"""

@@ -57,3 +57,44 @@ print(f'Lista {b}')
 b [2] = 8
 print(f'Lista {a}')
 print(f'Lista {b}')
+
+
+lanche = ['Hambúrguer', 'Suco', 'Pizza', 'Pudim', 'Batata frita']
+print(lanche)
+print(lanche[3])
+lanche[3] = 'Picole'
+print(lanche)
+lanche.append('Cooke')# o metodo .append() adiciono o 'itém' no final da lista.
+print(lanche)
+lanche.insert(0,'Cachorro-quente')
+print(lanche)
+
+"""    Apagando itém de uma lista             """
+
+del lanche[3] # foi deletado a Pizza que é o indice 3 "posição 4". # É usado nesse caso os Colchetes []
+print(lanche)
+lanche.pop(3) # agora será deletado o que esta no indece 3 que antes era a Pizza. # Nessa caso é usado os Parênteses ()
+print(lanche)
+lanche.pop() # Normalmente é usado para excluir o ultimo elemento, mas se passar os parametros dentro do Paêeteses () pode excluir um itém especifico
+print(lanche)
+lanche.remove('Hambúrguer') # Já nessa opção, NÃO se coloca o valor do índece entre os Parênteses mas sim o 'VALOR'/'ITÉM' 
+print(lanche)
+if 'Hamburguer' in lanche:
+    print(lanche.remove('Hamburguer'))
+else:
+    print('O item Hamburguer não tem mais nessa lista')
+
+
+"""                 Criando listas atravez de RANGE            """
+valores=list(range(4,11,2))
+print(valores)
+
+valores2 = [8,2,5,4,9,3,0]
+print(valores2)
+valores2.sort() # Esse metodo deixar organizado/ordenar crescente
+print(valores2)
+valores2.sort(reverse=True) # Esse metodo deixar organizado/ordenar decrescente
+print(valores2)
+print(len(lanche)) # metodo função interna do python, mostra o tamanha 
+print(len(valores)) # metodo função interna do python, mostra o tamanha
+print(len(valores2)) # metodo função interna do python, mostra o tamanha

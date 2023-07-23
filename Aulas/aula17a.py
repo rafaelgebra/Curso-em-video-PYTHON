@@ -98,3 +98,52 @@ print(valores2)
 print(len(lanche)) # metodo função interna do python, mostra o tamanha 
 print(len(valores)) # metodo função interna do python, mostra o tamanha
 print(len(valores2)) # metodo função interna do python, mostra o tamanha
+
+"""             EXEMPLO DE EXERCICIO               """
+
+num = [2, 5, 9, 1, 2,]
+print(num)
+num[2] = 3
+num.append(7)
+print(num)
+#num.sort(reverse=True)
+print(num)
+#num.sort()
+print(num)
+num.insert(2, 0)# Insere um item no local escolhido, nessa caso o 2 é a posição do índice e o 0 é o itém a ser acrescentado sem remover o atual
+print(num)
+num.pop() # remove o ultimo item da lista
+print(num)
+num.pop(2) # remove o itém que está no índice selecionado que esta pelos Parênteses
+print(num)
+
+for número in num:
+    if 3 in num:
+        num.remove(3) # remove o "conteúdo"/"valor" que esta dentro dos Parênteses # caso tenha mais iténs com as mesma caracteristicas, tem que usar os laços para remover, póis o .remove() só remove o primeiro itém da lista.
+for número in num:
+    if 2 in num:
+        num.remove(2)
+print(num)
+
+print(f'Essa lista tem {len(num)} elementos')
+
+
+"""                 EXEMPLO             """
+
+valores = []
+for c in range(0,5):
+    valores.append(int(input('Digite os valores: ')))
+for pos, valor in enumerate(valores):
+    print(f'Na posição {pos} encontrei o valor {valor}... ')
+print('Cheguei nessa MEEEEERDAA')
+
+"""             Explicação de ligação e cópia de lista          """
+
+a = [2, 3, 4, 7]
+b = a # Quando se cria uma igualdade na lista, o python entende que tem um ligação entre elas então se mexe em uma a outra também é alterada. Para fazer uma copia tem que fazer o seguinte b = a[:] -> isso signifaca que b esta recenbendo todos os iténs de a
+c = a[:]
+c[2] = 1
+
+print(f'Lista A: {a}')
+print(f'Lista B: {b}') # Aqui os "dados" da lista é uma ligação com a lista A. 
+print(f'Lista C: {c}') # Aqui os "dados" da lista é uma copia da lista A.

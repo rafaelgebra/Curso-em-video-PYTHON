@@ -13,3 +13,30 @@ num.sort()
 print(num)
 
 
+"""
+lista_Num = []
+
+while True:
+    num = (int(input('Digite um valor: ')))
+    if num not in lista_Num:
+        lista_Num.append(num)
+        print('Valor adinionado com sucesso')
+    else:
+        print('Valor duplicado. Não vou adicionar!!')
+    continuar = ' '
+    while continuar not in 'SsNn':
+        continuar = str(input('Quer continuar? [S/N]: ')).strip()
+    if continuar in 'Nn':
+        break
+
+print('-'*60)
+lista_Num.sort()
+print(f'Você digitou os valores {lista_Num}') 
+print('-'*60)
+lista_Num.sort(reverse=True)
+print(f'Os números ao contrario {lista_Num}')
+
+
+"""
+
+

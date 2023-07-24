@@ -14,3 +14,19 @@ print(f'Você digitou {len(lista)} elementos.')
 lista.sort(reverse=True)
 print(f'Os valores em ondem decrescente são {lista}')
 print(f'O valor 5 {cinco}')
+
+"""
+valores = []
+while True:
+    valores.append(int(input('Digite um valor: ')))
+    continuar = ' '
+    while continuar not in 'SsNn':
+        continuar = str(input('Quer continuar? [S/N]: ')).strip() 
+    if continuar in 'Nn':
+        break
+print(f'Você digitou {len(valores)} elementos.')
+valores.sort(reverse=True)
+print(f'Os valores em ordem decrescente são {valores}')
+print('O valor 5 faz parte da lista' if 5 in valores else 'O valor 5 não foi encontrado na lista!' )
+    
+"""

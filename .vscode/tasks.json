@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "/home/rafael/Documentos/GitHub/Curso-em-video-PYTHON/Curso-em-video-PYTHON",
+			"problemMatcher": [],
+			"label": "Live Preview: Executar Servidor",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

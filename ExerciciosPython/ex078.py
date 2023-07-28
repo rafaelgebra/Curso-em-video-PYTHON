@@ -26,6 +26,7 @@ print()
 
 
 """
+
 valores = []
 menor = maior = 0
 for c in range(0, 5):
@@ -54,6 +55,35 @@ for i, v in enumerate(valores):
         print(f'{i}...')
 print()
 
+
+#
+
+
+lista = []
+maior = menor = 0
+for c in range(0, 5):
+    lista.append(int(input(f'Digite um valore para a posição {c}: ')))
+for i, numero in enumerate(lista):  #           SEM a função FOR
+    if i == 0:                      #   if c == 0 
+        maior = menor = numero      #       maior = menor = lista[c]
+    else:                           #   else:
+        if numero > maior:          #       if lista[c] > maior:
+            maior = numero          #           maior = lista[c]
+        elif numero < menor:        #       elif lista[c] < menor:
+            menor = numero          #           menor = lista[c]
+print('-'*30)
+print(f'Você digitou os valores {lista}')
+print('-'*30)
+print(f'O maior valor digitado foi {maior} na posição ', end='')
+for p, v  in enumerate(lista):
+    if v == maior:
+        print(f'{p}...', end='')
+print()
+print(f'O menor valor difitado foi {menor} na posição ', end='')
+for p , v in enumerate(lista):
+    if v == menor:
+        print(f'{p}...', end='')
+print()
 
 
 """

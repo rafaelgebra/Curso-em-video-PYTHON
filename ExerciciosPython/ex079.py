@@ -37,6 +37,29 @@ lista_Num.sort(reverse=True)
 print(f'Os números ao contrario {lista_Num}')
 
 
+
+Refeito 
+
+
+
+valores = []
+while True:
+    num = int(input('Digite um valor: '))
+    if num in valores:
+        print('Valor duplicado não vou adicionar.')
+    else:
+        valores.append(num)
+        print('Valor adicionado com sucesso')
+    continuar = ' '
+    while continuar not in 'NnSs':
+        continuar = str(input('Quer continuar? [S/N] ')).strip()
+    if continuar in 'Nn':
+        break
+valores.sort()
+print(valores)
+
+
+
 """
 
 

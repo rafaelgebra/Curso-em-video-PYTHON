@@ -29,4 +29,28 @@ valores.sort(reverse=True)
 print(f'Os valores em ordem decrescente são {valores}')
 print('O valor 5 faz parte da lista' if 5 in valores else 'O valor 5 não foi encontrado na lista!' )
     
+
+
+        Exemplo: 2
+
+
+valores = []
+while True:
+    valores.append(int(input('Digite um número: ')))
+    continuar = ' '
+    while continuar not in 'NnSs':
+        continuar = str(input('Quer continuar? [S/N]: '))
+    if continuar in 'Nn':
+        break
+print('-'*50)
+print(f'Você digitou {len(valores)} elementos ')
+valores.sort(reverse=True)
+print(f'Os valores em ordem decrescente são {valores}')
+print('O valor 5 faz parte da lista nas posição' if 5 in valores else 'O número 5 não faz parte da lista', end='')
+for pos, num in enumerate(valores):
+    if 5 == num:
+        print(f' {pos}...',end='')
+print()
+
+
 """

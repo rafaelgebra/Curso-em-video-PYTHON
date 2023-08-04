@@ -38,4 +38,31 @@ print(f'A lista completa é {total_Lista}')
 print(f'A lista de pares é {par_Lista}')
 print(f'A lista de impares é {impar_Lista}')
 
+
+EX: 2
+
+lista_Total = []
+lista_pares = []
+lista_Impares = []
+while True:
+    num = int(input('Digite um numero: '))
+    lista_Total.append(num)
+    
+    continuar = ' '
+    while continuar not in 'NnSs':
+        continuar = str(input('Quer continuar? ')).strip()
+    if continuar in 'Nn':
+        break
+for pos, numeros in enumerate(lista_Total):
+    if numeros % 2 == 0:
+        lista_pares.append(numeros)
+    else:
+        lista_Impares.append(numeros)
+print(f'A lista completa é {lista_Total}')
+print(f'A lista de pares é {lista_pares}')
+print(f'A lista de ímpares é {lista_Impares}')
+
+
+
+
 """

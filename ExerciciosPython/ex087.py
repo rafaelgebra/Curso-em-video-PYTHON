@@ -33,8 +33,6 @@ cont = 0
 for linha in range(0, 3):
     for coluna in range(0, 3):
         matriz[linha][coluna] = int(input(f'Digite um valor [{linha}, {coluna}]: '))
-        
-
 print('='*20)
 print(f'{"Matriz em PYTHON":-^20}')
 print('='*20)
@@ -51,5 +49,31 @@ for numero in matriz:
 print(f'A soma dos valores pares é {soma_Par}')
 print(f'A soma dos valores da terceira coluna é {soma_Coluna3}')
 print(f'O maior valor da segunda linha é {max(matriz[1])}')
+
+
+Ex: 2
+
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+soma_Par = soma_Terceira_C = maior_Valor_segunda_L = 0
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valore para [{l, c}]: '))
+        soma_Terceira_C += matriz[l][2]
+        if matriz[l][c] % 2 == 0:
+            soma_Par += matriz[l][c]
+        if c == 0 :
+            maior_Valor_segunda_L = matriz[1][c]
+        else:
+            if matriz[1][c] > maior_Valor_segunda_L:
+                maior_Valor_segunda_L = matriz[1][c]
+print('-'*60)
+for l in range(0, 3):
+    for c in range(0,3):
+        print(f'[{matriz[l][c]:^5}]', end=' ')
+    print()
+print('-'*60)
+print(f'A soma dos valore pares é {soma_Par}')
+print(f'A soma dos valores da terceira coluna é {soma_Terceira_C}')
+print(f'O maior valor da segunda linha é {maior_Valor_segunda_L}')
 
 """

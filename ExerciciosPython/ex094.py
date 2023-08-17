@@ -38,6 +38,43 @@ print('  << ENCERRANDO>>  ')
 
 
 """
+from time import sleep
+total_Pessoas = []
+pessoa = {}
+media = total_Idade = 0
+while True:
+    pessoa.clear()
+    pessoa['nome'] = str(input('Nome: ')).strip()
+    while True:
+        pessoa['sexo'] = str(input('Sexo: ')).strip().upper()[0]
+        if pessoa['sexo'] in 'MF':
+            break
+        print('ERRO! Digite somente uma das duas opções M ou F.')
+    pessoa['idade'] = int(input('Idade: '))
+    total_Idade += pessoa['idade']
+    total_Pessoas.append(pessoa.copy())
+    media = total_Idade / len(total_Pessoas)
+    while True:
+        continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+        if continuar in 'SN':
+            break
+        print('ERRO! Digite Sim ou Não.')
+    if continuar == 'N':
+        break
+print(f'A) Ao todo temos {len(total_Pessoas)} cadatradas')
+print(f'B) A média de idade é de {media} anos.')
+print(f'C) A única mulher cadastrada foi 'if len(pessoa["nome"]) > 0 else 'As mulheres cadastradas foram:', end=' ')
+for pessoa in total_Pessoas:
+    if pessoa['sexo'] == 'F':
+        print(f'{pessoa["nome"]}', end=', ')
+    print()
+for pessoas in total_Pessoas:
+    if pessoas['idade'] >= media:
+        print('   ', end=' ')
+        for keys, value in pessoas.items():
+            print(f'{keys}; = {value};', end=' ')
+        print()
+print('ENCERRANDO... ')
 
 
 

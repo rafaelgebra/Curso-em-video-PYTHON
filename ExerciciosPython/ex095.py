@@ -1,8 +1,6 @@
-
 jogador = {}
 time = []
 gols = []
-
 while True:
     total = 0
     jogador['nome'] = str(input('Nome do jogador: ')).strip()
@@ -15,6 +13,7 @@ while True:
     jogador['total'] = total
     time.append(jogador.copy())
     gols.clear()
+    jogador.clear()
     while True:
         continuar = str(input('Quer continuar? ')).strip().upper()[0]
         if continuar in 'NS':
@@ -33,3 +32,15 @@ for keys, value in enumerate(time):
     for dado in value.values():
         print(f'{str(dado):<15}', end=' ')
     print()
+while True:
+    busca = int(input('Mostar dados de qual jogador? (999 oara parar) '))
+    if busca == 999:
+        break
+    if busca >= len(time):
+        print(f'ERRO! Não exiter o jogador com esse código {busca}')
+    else:
+        print(f' -- LEVANTAMENTO DO JOGADOR {time[busca]["nome"].upper()} ')
+        for index, gols in enumerate(time[busca]["gols"]):
+            print(f'No jogo {index+1} fez {gols} gols')
+    print('-'*40)
+print(' -- VOLTE SEMPRE --')

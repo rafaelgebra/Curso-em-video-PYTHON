@@ -1,3 +1,48 @@
+ Aula 20 - FUNÇÕES
+
+
+# Para declarar uma função personalizada usar a "palavra - def"
+
+#           Ex: 1
+def mostralinha():
+    print('-'*30)
+
+mostralinha()
+print(f'{"SISTEMA DE ALUNOS":^30}')
+mostralinha()
+mostralinha()
+print(f'{"CADASTRO DE FUNCIONÁRIOS":^30}')
+mostralinha()
+mostralinha()
+print(f'{"ERRO DO SISTEMA":^30}')
+mostralinha()
+
+#           Ex: 2
+
+def mensagem(msg): # O msg é um parametro
+    print('-'*30) #Aqui é uma linha
+    print(msg) # aqui é uma mensagem que vai 'vir' como paremetro.
+    print('-'*30) #Aquei é uma linha
+
+
+mensagem(f'{"SISTEMA DE ALUNOS":^30}')
+mensagem(f'{"APRENDDNDO PYTHON":^30}')
+mensagem(f'{"RAFAEL RODRIGUES GEBRA":^30}')
+
+
+#           Ex: 3
+def titulo(txt):
+    print('-'*30)
+    print(txt)
+    print('-'*30)
+
+
+titulo(f'{"SISTEMA DE ALUNOS":^30}')
+titulo(f'{"APRENDDNDO PYTHON":^30}')
+titulo(f'{"RAFAEL RODRIGUES GEBRA":^30}')
+titulo(f'{"TO CHEGANDO":^30}')
+
+
 """a = 4
 b = 5
 s = a + b
@@ -29,7 +74,6 @@ def soma2(a, b):
 soma2(b=4, a=5)
 soma2(7, 9)
 
-#para "empacotar parametros"
 
 
 pares = []

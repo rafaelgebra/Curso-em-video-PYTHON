@@ -1,28 +1,32 @@
 from time import sleep
 def contador(i, f, p):
-    print(f'Contagem de {inicio}, até {fim}, de {passo} em {passo}')
-    for c in range(inicio, fim, passo):
-        print(f'{c}', end=' ')
-    print()
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+    print('-='*20)
+    print(f'Contagem de {i}, até {f}, de {p} em {p}')
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont}', end=' ', flush=True)
+            cont += p
+            sleep(0.2)
+        print('FIM!')
+    elif i > f:
+        cont = i
+        while cont >= f:
+            print(f'{cont}',end=' ', flush=True)
+            cont -= p
+            sleep(0.2)
+        print('FIM!')
 
-
-"""print('-=' * 50)
-for c in range(0, 11, 1):
-    print(f'{c}', end=' ')
-print()
-print('-=' * 50)
-for c in range(10, -1, -1 ):
-    print(f'{c}', end=' ')
-print()"""
-
-
-
-
+#programa principal
+contador(1, 10, 1)
+contador(10, 0, 2)
+print('Agora é dua vez de persoalizar o contador')
+print('-='*20)
 inicio  = int(input('Inicio: '))
 fim = int(input('Fim: '))
 passo = int(input('Passo: '))
-
-
-contador(1, 11, 1)
-contador(10, 0, -1)
 contador(inicio, fim, passo)

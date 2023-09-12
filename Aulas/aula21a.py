@@ -131,3 +131,32 @@ print(f'Meus cálculos deram {r1}, {r2}, {r3}')
 
 # Pratica
 
+#Ex: 1 - Fatorial
+
+def fatorial(num=1):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+    
+n = int(input('Digite um número: '))
+print(f'O fatorial de {n} é igual a {fatorial(n)}')
+
+
+#Ex: 2
+
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+for c in range(0, 4):  
+    print()  
+    num = int(input('Digite um numero: '))
+    if par(num):
+        print('É par')
+    else:
+        print('É impar')
+
+
+

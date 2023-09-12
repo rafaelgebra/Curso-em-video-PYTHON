@@ -19,6 +19,6 @@ def fatorial(num=0, show=False):
 
 
 #Programa Princial
-#n = int(input('Digite um número: '))
-#print(f'O fatorial do numero de {n} é...', end=' ')
-fatorial(5, show=True)
+n = int(input('Digite um número: '))
+print(f'O fatorial do numero de {n} é...', end=' ')
+fatorial(n, show=True)

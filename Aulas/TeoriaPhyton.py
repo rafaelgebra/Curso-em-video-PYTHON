@@ -656,125 +656,349 @@ for estado in brasil:
     print()
 
 
-#               Aula 20 - FUNÇÕES
+#               Aula 20 - FUNÇÕES em programação podemos dizer que é uma rotina
+#
+# # Para declarar uma função personalizada usar a "palavra - def" definição de função
+#
+# #           Ex: 1
+# def mostralinha():
+#     print('-'*30)
+#
+# mostralinha()
+# print(f'{"SISTEMA DE ALUNOS":^30}')
+# mostralinha()
+# mostralinha()
+# print(f'{"CADASTRO DE FUNCIONÁRIOS":^30}')
+# mostralinha()
+# mostralinha()
+# print(f'{"ERRO DO SISTEMA":^30}')
+# mostralinha()
+#
+# #           Ex: 2
+#
+# def mensagem(msg): # O msg é um parametro
+#     print('-'*30) #Aqui é uma linha
+#     print(msg) # aqui é uma mensagem que vai 'vir' como paremetro.
+#     print('-'*30) #Aquei é uma linha
+#
+#
+# mensagem(f'{"SISTEMA DE ALUNOS":^30}')
+# mensagem(f'{"APRENDDNDO PYTHON":^30}')
+# mensagem(f'{"RAFAEL RODRIGUES GEBRA":^30}')
+#
+#
+# #           Ex: 3
+# def titulo(txt):
+#     print('-'*30)
+#     print(txt)
+#     print('-'*30)
+#
+#
+# titulo(f'{"SISTEMA DE ALUNOS":^30}')
+# titulo(f'{"APRENDDNDO PYTHON":^30}')
+# titulo(f'{"RAFAEL RODRIGUES GEBRA":^30}')
+# titulo(f'{"TO CHEGANDO":^30}')
+#
+#
+# """a = 4
+# b = 5
+# s = a + b
+# print(s)
+# s = 8
+# b = 9
+# s = a + b
+# print(s)
+# a = 2
+# b = 1
+# s = a + b
+# print(s)"""
+#
+# def soma(a, b):
+#     s = a + b
+#     print('-'*30)
+#     print(s)
+#
+#
+# soma(4, 5)
+#
+# # além disso posso mudar a ordem
+#
+# def soma2(a, b):
+#     print(f'A = {a} e B = {b}')
+#     s = a + b
+#     print(f'A soma de A + B = {s}')
+#
+# soma2(b=4, a=5)
+# soma2(7, 9)
+#
+#
+#
+# pares = []
+# impares = []
+#
+# def par (num):
+#     print('-')
+#     if num % 2 == 0:
+#         print(f"O número {num} é par")
+#         pares.append(num)
+#
+#     else:
+#         print(f'O número {num} é impar')
+#         impares.append(num)
+#
+# for c in range(0, 8):
+#     par(int(input('Digite um número ')))
+#
+#
+# print(pares)
+# print(impares)
+#
+#
+# # Isso NÃO é DESEMPACOTAMENTO é lista.
+# def dobra(lst):
+#     pos = 0
+#     while pos < len(valores):
+#         lst[pos] *= 2
+#         pos += 1
+#
+# valores = [6, 5, 2, 8, 0]
+# dobra(valores)
+# print(valores)
+#
+#
+#
+# # Isso é DESEMPACORAMENTO
+# def soma(*valores):
+#     s = 0
+#     for num in valores:
+#         s += num
+#     print(f'Somando o valores {num} é igual a {s}')
+#
+#
+# soma(5, 2)
+# soma(2, 9, 4)
+#
+# # exemplos praticos
+#
+# def l(msg):
+#     tam = len(msg)+4
+#     print('-'*tam)
+#     print(f'  {msg}  ')
+#     print('-' *tam)
+#
+#
+# def soma(a, b):
+#     s = a + b
+#     l(f'A soma entre {a} + {b} é {s}')
+#
+#
+# def valores(*num):
+#     s = 0
+#     for valor in num:
+#         print(f'{valor}', end=' ')
+#         s += valor
+#     print(f'O soma dos valores sao {s}')
+#
+#
+# def dobra(*num):
+#     for valor in num:
+#         print(f'O valor dobrado de {valor} é ', end='')
+#         valor *= 2
+#         print(valor)
+#     print()
+#
+#
+# def dobranum(lis):
+#     pos = 0
+#     while pos < len(lis):
+#         lis[pos] *= 2
+#         pos += 1
+#
+#
+#
+# #Programa Principal
+# l('Curso em Video')
+# l('Aprendendo Python')
+# l('Rafael Rodrigues')
+# soma(2, 4)
+# soma(b=4, a=7)
+# soma(1, 2)
+# valores(5, 7, 3, 1, 4)
+# valores(8, 4, 7)
+# valores(2, 4)
+# valores()
+# dobra(7, 2, 5, 0, 4)
+# lista = [7, 2, 5, 0, 4]
+# dobranum(lista)
+# print(lista)
 
 
-# Para declarar uma função personalizada usar a "palavra - def"
+# Curso em Python - Aula 21 - Funções (Parte 2)
 
-#           Ex: 1
-def mostralinha():
-    print('-'*30)
+# 1º Interactive help - Ajuda interativa
 
-mostralinha()
-print(f'{"SISTEMA DE ALUNOS":^30}')
-mostralinha()
-mostralinha()
-print(f'{"CADASTRO DE FUNCIONÁRIOS":^30}')
-mostralinha()
-mostralinha()
-print(f'{"ERRO DO SISTEMA":^30}')
-mostralinha()
+# A primeira forma é usar a função/metodo - help() NO CONSOLE.
+"""
+Para ter essa 'Ajuda' no Pycharm é só ir Console Python e escrever a função/metodo - help()
 
-#           Ex: 2
-
-def mensagem(msg): # O msg é um parametro
-    print('-'*30) #Aqui é uma linha
-    print(msg) # aqui é uma mensagem que vai 'vir' como paremetro.
-    print('-'*30) #Aquei é uma linha
+Para ter essa 'Ajuda' no VScode é so abre o console e escrever Python depois escreve a função/metodo - help() 'no caso do VScode tem que apertar a letra Q para poder ter outra ajuda'.
 
 
-mensagem(f'{"SISTEMA DE ALUNOS":^30}')
-mensagem(f'{"APRENDDNDO PYTHON":^30}')
-mensagem(f'{"RAFAEL RODRIGUES GEBRA":^30}')
+"""
+# A segunda forma é usar a função/metodo - help() dentro do "programa".
+"""
+Tanto dentro do Pycharm e do VScode é do escrever dentro do programa a função/metodo - help(print)
+Esse é um exemplo. mas pode por qualquer função dentro de help()
+"""
+
+# A terceira forma é usar o doc interno dentro de um comando - __doc__
+"""
+Tando dentro do Pycharm e do VScode é usado da seguinte forma.
+Ex: parametros do comando input. 
+print(input.__doc__) "as informações talvez não sejam tão parecidas"
+"""
 
 
-#           Ex: 3
-def titulo(txt):
-    print('-'*30)
-    print(txt)
-    print('-'*30)
+# 2º Docstrings - String de documentação - As nossos funções podem ser documentadas
+
+def contador(i, f, p):  # i, f, p São chamados de parametros Reais
+    # para criar um docstring dessa função é só abrir aspas duplas 3 vezes aqui em baixo
+    """
+    -> Faz uma contagem e mostra na tela.
+    :param i: início da contagem
+    :param f: fim da contagem
+    :param p: passo da contagem
+    :return: sem retorno
+    Função criada por rafael cursando Python no Curso em Vídeo
+    """
+    c = i
+    while c <= f:
+        print(f'{c}', end=' ')
+        c += p
+    print('FIM!')
 
 
-titulo(f'{"SISTEMA DE ALUNOS":^30}')
-titulo(f'{"APRENDDNDO PYTHON":^30}')
-titulo(f'{"RAFAEL RODRIGUES GEBRA":^30}')
-titulo(f'{"TO CHEGANDO":^30}')
+# Programa Principal
+contador(1, 10, 2)  # 1, 10, 2 = São chamados de paramentros Formais
+help(contador)
 
 
-"""a = 4
-b = 5
-s = a + b
-print(s)
-s = 8
-b = 9
-s = a + b
-print(s)
-a = 2
-b = 1
-s = a + b
-print(s)"""
+# 3º Argumentos/Parametros opcionais
 
-def soma(a, b):
-    s = a + b
-    print('-'*30)
-    print(s)
+def somar(a=0, b=0, c=0):  # esse =0 é chamado de parametro opcional
+    """
+    -> Faz a soma de três valores e mostra o resultado na tela.
+    :param a: o primeiro valor
+    :param b: o segundi valor
+    :param c: o terceiro valor
+    """
+    s = a + b + c
+    print(f'A soma vale {s}')
 
 
-soma(4, 5)
+# Programa Principal
+somar(3, 2, 5)
+somar(3, 2)
+somar(3)
+somar()
+# para não tem problema com quantidade de parametros tem que usar a técnica de multi parametros - def somar(*num):
 
-# além disso posso mudar a ordem
-
-def soma2(a, b):
-    print(f'A = {a} e B = {b}')
-    s = a + b
-    print(f'A soma de A + B = {s}')
-
-soma2(b=4, a=5)
-soma2(7, 9)
+help(somar)  # docstring
 
 
+# 4º Escopo de variáveis - normalmente escopo é o local aonde uma variável vai existir e aonde a variável não vai mais existir.
 
-pares = []
-impares = []
+# Ex:1
+def test():
+    x = 8  # Variável/Escopo local - esse Escopo só funciona dentro da função/local
+    print(f'Na função teste n vale {n}')
+    print(f'Na função teste x vale {x}')
 
-def par (num):
-    print('-')
-    if num % 2 == 0:
-        print(f"O número {num} é par")
-        pares.append(num)
 
+# Programa Principal
+n = 2  # Variável/Escopo global
+print(f'No programa principal, n vale {n}')
+test()
+
+
+# Ex:2
+def teste(b):
+    a = 8  # Escopo local
+    b += 4  # Escopo local
+    c = 2  # Escopo local
+    print(f'(A) dentro vale {a}')
+    print(f'(B) dentro vale {b}')
+    print(f'(C) dentro vale {c}')
+
+
+# Programa Principal
+a = 5  # Escopo global
+print(f'(A) fora vale {a}')
+teste(a)
+
+
+# Ex: 3
+def teste(b):
+    global a
+    a = 8  # Escopo local
+    b += 4  # Escopo local
+    c = 2  # Escopo local
+    print(f'(A) dentro vale {a}')
+    print(f'(B) dentro vale {b}')
+    print(f'(C) dentro vale {c}')
+
+
+# Programa Principal
+a = 5  # Escopo global
+print(f'(A) fora vale {a}')
+teste(a)
+print()
+print(f'(A) fora vale {a}')
+teste(a)
+
+
+# 5º Retorno de resultados
+
+# Ex:
+def somar(a=0, b=0, c=0):
+    s = a + b + c
+    return s
+
+
+r1 = somar(3, 2, 5)
+r2 = somar(2, 2)
+r3 = somar(6)
+print(f'Meus cálculos deram {r1}, {r2}, {r3}')
+
+
+# Pratica
+
+# Ex: 1 - Fatorial
+
+def fatorial(num=1):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+
+
+n = int(input('Digite um número: '))
+print(f'O fatorial de {n} é igual a {fatorial(n)}')
+
+
+# Ex: 2
+
+def par(n=0):
+    if n % 2 == 0:
+        return True
     else:
-        print(f'O número {num} é impar')
-        impares.append(num)
-
-for c in range(0, 8):
-    par(int(input('Digite um número ')))
-
-   
-print(pares)
-print(impares)
+        return False
 
 
-# Isso NÃO é DESEMPACOTAMENTO é lista.
-def dobra(lst):
-    pos = 0
-    while pos < len(valores):
-        lst[pos] *= 2
-        pos += 1
-
-valores = [6, 5, 2, 8, 0]
-dobra(valores)
-print(valores)
-
-
-
-# Isso é DESEMPACORAMENTO
-def soma(*valores):
-    s = 0
-    for num in valores:
-        s += num
-    print(f'Somando o valores {num} é igual a {s}')
-
-
-soma(5, 2)
-soma(2, 9, 4)
+for c in range(0, 4):
+    print()
+    num = int(input('Digite um numero: '))
+    if par(num):
+        print('É par')
+    else:
+        print('É impar')

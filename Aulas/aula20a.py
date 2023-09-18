@@ -1,7 +1,6 @@
- Aula 20 - FUNÇÕES
+ Aula 20 - FUNÇÕES em programação podemos dizer que é uma rotina
 
-
-# Para declarar uma função personalizada usar a "palavra - def"
+# Para declarar uma função personalizada usar a "palavra - def" definição de função
 
 #           Ex: 1
 def mostralinha():
@@ -120,3 +119,57 @@ def soma(*valores):
 
 soma(5, 2)
 soma(2, 9, 4)
+
+# exemplos praticos
+
+def l(msg):
+    tam = len(msg)+4
+    print('-'*tam)
+    print(f'  {msg}  ')
+    print('-' *tam)
+
+
+def soma(a, b):
+    s = a + b
+    l(f'A soma entre {a} + {b} é {s}')
+
+
+def valores(*num):
+    s = 0
+    for valor in num:
+        print(f'{valor}', end=' ')
+        s += valor
+    print(f'O soma dos valores sao {s}')
+
+
+def dobra(*num):
+    for valor in num:
+        print(f'O valor dobrado de {valor} é ', end='')
+        valor *= 2
+        print(valor)
+    print()
+
+
+def dobranum(lis):
+    pos = 0
+    while pos < len(lis):
+        lis[pos] *= 2
+        pos += 1
+
+
+
+#Programa Principal
+l('Curso em Video')
+l('Aprendendo Python')
+l('Rafael Rodrigues')
+soma(2, 4)
+soma(b=4, a=7)
+soma(1, 2)
+valores(5, 7, 3, 1, 4)
+valores(8, 4, 7)
+valores(2, 4)
+valores()
+dobra(7, 2, 5, 0, 4)
+lista = [7, 2, 5, 0, 4]
+dobranum(lista)
+print(lista)

@@ -33,7 +33,7 @@ while True:
 
 #Exemplo sw exercio 2
 
-"""
+'''
 from time import sleep
 def mensagem(txt):
     """
@@ -77,4 +77,4 @@ while True:
 sleep(1)
 print('FIM')
 
-"""
+'''

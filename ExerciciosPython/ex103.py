@@ -15,3 +15,23 @@ if n.strip() == '':
     ficha(gol=g)
 else:
     ficha(n, g)
+
+
+'''
+def ficha(no='<desconhecido>', gol=0):
+    print(f'O Jogador {no}, fez {gol}(s) no campeonato')
+
+#Programa principal
+nome = str(input('Nome do Jogador: ')).capitalize().strip()
+gols = str(input('Número de Gols: '))
+
+if gols.isnumeric():
+    gols = int(gols)
+else:
+    gols = 0
+if nome.strip() == '':
+    ficha(gol=gols)
+else:
+    ficha(nome, gols)
+
+'''

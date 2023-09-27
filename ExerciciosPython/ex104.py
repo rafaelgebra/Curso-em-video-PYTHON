@@ -19,3 +19,21 @@ def leia_Int(msg):
 #Programa Principal
 n = leia_Int('Digite um número: ')
 print(f'Você acabou de digitar o número {n}')
+
+
+'''
+def leia_Int(msg):
+    while True:
+        num = str(input(msg))
+        if num.isnumeric():
+            valor = int(num)
+            return valor
+            break
+        print('\033[0;31mERRO! Digite um número inteiro valido\033[m')
+
+
+#Programa Principal
+n = leia_Int('Digite um número: ')
+print(f'você acabou de digitar o número {n}')
+
+'''

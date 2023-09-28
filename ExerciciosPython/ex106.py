@@ -38,3 +38,46 @@ while True:
     else:
         ajuda(comando)
 titulo('ATÉ LOGO', 1)
+
+'''
+from time import sleep
+c = ['\33[m',
+     '\033[0;30;41m',
+     '\033[0;30;42m',
+     '\033[0;30;43m',
+     '\033[0;30;44m',
+     '\033[0;30;45m',
+     '\033[7;30m']
+
+
+def ajuda(msg, cor=0):
+
+    titulo(f'acessando o manual do comando \'{msg}\'', 3)
+    sleep(1)
+    print(c[5], end='', flush=True)
+    return help(msg)
+
+
+def titulo(msg, cor=0):
+
+    tam = len(msg) + 4
+    sleep(1)
+    print(c[cor], end='')
+    print('~' * tam)
+    print(msg)
+    print('~' * tam)
+    print(c[0], end='')
+
+
+while True:
+    titulo('SISTEMA DE AJUDA PyHELP', 2)
+    sleep(1)
+    palavra = str(input('Função ou Bibliotera > '))
+    if palavra.upper() == 'FIM':
+        break
+    else:
+        ajuda(palavra)
+titulo('ATÉ LOGO', 1)
+
+
+'''

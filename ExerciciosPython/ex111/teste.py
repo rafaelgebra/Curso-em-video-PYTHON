@@ -1,4 +1,4 @@
-from ex110.utilidades import moeda
+from utilidadescev import moeda
 
 p = float(input(('Digite o preço: R$')))
 taxaa = int(input('Qual a TAXA de aumento? '))

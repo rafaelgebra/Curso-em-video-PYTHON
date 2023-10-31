@@ -10,7 +10,7 @@ def leia_Int(msg):
             return 0
         else:
             return num
-        
+
 
 def leia_Float(msg):
     while True:

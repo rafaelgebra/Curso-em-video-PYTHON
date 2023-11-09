@@ -3,11 +3,11 @@ try: # tentar
     b = int(input('Denominador: '))
     r = a/b
 #except Exception as erro:
-    print(f'problema encontrado foi{erro.__class__}') # Dessa maneira podemos mostra de forma personalizar o erro
+    #print(f'problema encontrado foi{erro.__class__}') # Dessa maneira podemos mostra de forma personalizar o erro
 #except TypeError: # se der erro/problema | o TypeError é especificando o erro/problema
-    'Falha'
+    #'Falha'
 #except ValueError: # Se der erro/problema | o ValurError mostra o valor do erro/problema
-    'Falha'
+    #'Falha'
 except ZeroDivisionError: # Se der erro/problema | O ZeroDivisionError mostra que a "conta" não é dividido por 0
     print('Não é possivel dividir um número por ZERO (0)')
 except KeyboardInterrupt:

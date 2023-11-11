@@ -51,6 +51,6 @@ def cadastro(num):
 
 
 def sair(num):
-    cabecalho(f'{"Saindo do sistema... Até logo"}')
+    cabecalho(f'{"Saindo do interface... Até logo"}')
 
 

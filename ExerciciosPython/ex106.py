@@ -1,4 +1,4 @@
-# Faça um mini-sistema que ultiliza o interactive Help do python. O usuário vai digitar o comando e p manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará. Importante: Use cores.
+# Faça um mini-interface que ultiliza o interactive Help do python. O usuário vai digitar o comando e p manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará. Importante: Use cores.
 from time import sleep
 c = ('\33[m',           # 0 - sem cores
      '\33[0;30;41m',    # 1 - Vermelho
